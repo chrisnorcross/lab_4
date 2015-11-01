@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="889.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.PokerTableController">
+<AnchorPane stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.PokerTableController">
    <children>
-      <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="889.0">
+      <BorderPane layoutX="-1.0" layoutY="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
             <AnchorPane prefHeight="155.0" prefWidth="728.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" layoutX="108.0" layoutY="-3.0" prefHeight="157.0" prefWidth="657.0">
+                  <HBox alignment="CENTER" layoutX="108.0" layoutY="-3.0" prefHeight="157.0" prefWidth="657.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <GridPane prefHeight="162.0" prefWidth="671.0">
                           <columnConstraints>
@@ -79,9 +79,9 @@
             </AnchorPane>
          </bottom>
          <center>
-            <AnchorPane prefHeight="180.0" prefWidth="889.0" BorderPane.alignment="CENTER">
+            <AnchorPane BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" layoutX="125.0" layoutY="138.0" prefHeight="173.0" prefWidth="339.0">
+                  <HBox alignment="CENTER" layoutX="125.0" layoutY="138.0" prefHeight="173.0" prefWidth="339.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                      <children>
                         <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="173.0" prefWidth="338.0">
                           <items>
@@ -141,9 +141,9 @@
             </AnchorPane>
          </center>
          <top>
-            <AnchorPane prefHeight="107.0" prefWidth="674.0" BorderPane.alignment="CENTER">
+            <AnchorPane BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" layoutX="114.0" layoutY="3.0" prefHeight="150.0" prefWidth="662.0">
+                  <HBox alignment="CENTER" layoutX="114.0" layoutY="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <GridPane prefHeight="109.0" prefWidth="672.0" rotate="180.0">
                           <columnConstraints>
@@ -157,43 +157,44 @@
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="536.0" minWidth="10.0" prefWidth="148.05587768554688" />
                           </columnConstraints>
                           <rowConstraints>
+                            <RowConstraints />
                             <RowConstraints maxHeight="46.00797653198242" minHeight="9.0758056640625" prefHeight="9.0758056640625" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="105.9241943359375" minHeight="10.0" prefHeight="105.9241943359375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="105.9241943359375" minHeight="10.0" prefHeight="105.9241943359375" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <ToggleButton fx:id="btnP1SitLeave1" mnemonicParsing="false" onAction="#handleP1SitLeave" prefHeight="31.0" prefWidth="83.0" styleClass="togglebutton" text="Sit" GridPane.rowIndex="1" />
-                              <TextField fx:id="txtP1Name1" text="Two" />
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="btnP1SitLeave1" mnemonicParsing="false" onAction="#handleP1SitLeave" prefHeight="31.0" prefWidth="83.0" styleClass="togglebutton" text="Sit" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtP1Name1" text="Two" GridPane.rowIndex="1" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </HBox>
-                              <HBox GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <HBox GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                  <children>
                                     <ImageView pickOnBounds="true" preserveRatio="true" />
                                  </children>
@@ -206,9 +207,9 @@
             </AnchorPane>
          </top>
          <left>
-            <AnchorPane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <AnchorPane BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" prefHeight="450.0" prefWidth="150.0">
+                  <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <GridPane prefHeight="450.0" prefWidth="219.0">
                           <columnConstraints>
@@ -268,9 +269,9 @@
             </AnchorPane>
          </left>
          <right>
-            <AnchorPane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <AnchorPane BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" prefHeight="500.0" prefWidth="150.0">
+                  <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
                      <children>
                         <GridPane alignment="TOP_CENTER" prefHeight="479.0" prefWidth="150.0">
                           <columnConstraints>
