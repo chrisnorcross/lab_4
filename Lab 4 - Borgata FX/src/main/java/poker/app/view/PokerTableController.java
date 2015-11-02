@@ -44,6 +44,41 @@ public class PokerTableController {
 	public ToggleButton btnP1SitLeave;
 	
 	@FXML
+	public HBox h1P2;
+
+	@FXML
+	public TextField txtP2Name;
+	
+	@FXML
+	public Label lblP2Name;
+
+	@FXML
+	public ToggleButton btnP2SitLeave;
+	
+	@FXML
+	public HBox h1P3;
+
+	@FXML
+	public TextField txtP3Name;
+	
+	@FXML
+	public Label lblP3Name;
+
+	@FXML
+	public ToggleButton btnP3SitLeave;
+	
+	@FXML
+	public HBox h1P4;
+
+	@FXML
+	public TextField txtP4Name;
+	
+	@FXML
+	public Label lblP4Name;
+
+	@FXML
+	public ToggleButton btnP4SitLeave;
+	@FXML
 	public Button btnDraw;
 	
 	@FXML
